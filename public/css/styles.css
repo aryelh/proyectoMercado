@@ -1,0 +1,224 @@
+header{
+    background-color: #EAC926;
+    color: rgb#03264C;
+  
+}
+/*CUERPO PRINCIPAL DE LA PAGINA BODY*/
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;
+    font-size: 12px;
+    margin: 0;
+}
+/*IMAGEN DEL LOGOTIPO*/
+.logotype{
+    max-width: 40%;
+    display: block;
+    padding: 20px;
+}
+/*FORMULARIO BUSCAR*/
+.search-engine{
+    margin-left:5%;
+    max-width: 70%;
+}
+/*IMAGEN DE LUPA AL LADO DEL FORMULARIO BUSCAR*/
+.lupa{
+    background: white;
+    border: 1px solid #666;
+    margin-left: 2px;
+    font-size: 18px;
+    margin: 0;
+}
+/*TEXTO COMPRA EN CUOTAS*/
+.compra-en-cuotas{
+    text-align: center;
+}
+/*LISTA DEL ENCABEZADO OFERTAS HASTA AYUDA Y CREA TU CUENTA HASTA MIS COMPRAS*/
+ul{
+    /*list-style: none;*/
+    /*text-decoration: none;*/
+    padding: 0;
+}
+.text-first-ulist{
+    text-decoration: none;
+}
+
+/*MENU HAMBURGUESA*/
+.burger-menu{
+    text-align: center;
+    background-color:#1259c3;
+    color: #ebebeb;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 1mm;
+    border-color: #1259c3;   
+}
+i.element-i{
+    line-height: 30px;
+}
+/*CAJA CONTENEDORA BANER*/
+.banner{
+    display: flex;
+    flex-direction: column;
+}
+/*IMAGEN BANER*/
+.imagebanner{
+    max-width: auto;
+    height: 500px;
+}
+/*main{ QUITAR DESPUESSSSSSSSS
+    width: 90%;
+    margin: 0 auto;
+}*/
+/*H3 TEXTO ULTIMA VISITA Y OFERTAS*/
+.seccion{
+    font-size: 24px;
+    text-align: left;
+    color: #666;
+}
+/*CAJA CONTENEDORA TODOS LOS PRODUCTOS ULTIMA VISITA*/
+.imag-productos{
+    margin: auto;
+    width: 90%;
+}
+/*CAJA CONTENEDORA PRODUCTOS ULTIMA VISITA COMPLETO, CADA PRODUCTO CONTIENE ESTA CAJA*/*
+.products-lv{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: white;
+}
+/*CADA UNA DE LAS IMAGENES DE ARTICULOS ULTIMA VISITA Y OFERTAS*/
+article img{
+    width: 100vw;
+    max-width: 100%;
+}
+/*P TEXTO PRECIOS*/
+.precios-text{
+    font-size:18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    width: 30%;
+}
+/*P TEXTO DESCUENTOS*/
+.descu{
+    font-size: 16px;
+    margin-top: 0px;
+    color: #39b54a;
+    margin-left: 10px;
+    width: 70%;
+}
+/*P TEXTO DESCRIPCION, TIPO DE PRODUCTO MARCA Y MODELO*/
+.descrip{
+    font-size: 16px;
+    font-weight: normal;
+    color:#666;
+    margin-top: 20px;
+    margin-left: 10px;
+    /*display:none;*/ 
+}
+/*CAJA CONTENEDORA DEL CAMION DE REPARTO*/
+
+.contenedor-principal{
+    position: relative;
+}
+
+.circulo-camionsito{
+    border-top: 2px solid #ebebeb;
+    padding: 15px;
+}
+/*IMAGEN CAMIONSITO DE REPARTO*/
+.truck-details{
+    color: #39b54a;
+    font-size: 15px;
+    padding: auto;
+    text-align: center;
+    line-height: 0px;
+    position: absolute;
+    right: 20px;
+}
+
+/*CIRCULO CAMIONSITO*/
+div .truck-details{
+    background-color:white;
+    border: solid 1px green;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+/*PIE DE PAGINA*/
+
+footer{
+    background-color: white;
+    text-align: center;
+    color: #666;
+}
+.pie-grande{
+
+    border: 2px solid rgb(0, 0, 0);/*QUITAR ESTO*/
+}
+.piedepagina{
+    padding-top: 35px;
+    margin: 0 35px;
+    border: 2px solid green;/*QUITAR ESTO*/
+}
+
+.imgfooter{
+    color: #1259c3;
+    font-size: 2em;
+}
+.footersubt{
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.footer-p{
+    margin-top: 2px;
+    margin-bottom: 50px;
+}
+.derechos-r{
+    text-align: left;
+    margin-left: 10px;
+}
+/*MEDIA QUERIES*/
+@media (min-width: 426px){
+    .products-lv{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .all-images-container{
+        display:flex;
+        flex-direction: row;
+    }
+    .products-lv{
+    margin: 10px 10px;
+    box-sizing: border-box;
+    }
+    .valor-desc{
+    display: flex;
+    flex-direction: row;   
+    }
+}
+/*PARA PC*/
+
+
+
+@media (min-width: 769px){
+
+    .products-lv:hover .descrip{
+        position:absolute;
+        z-index: 1;
+        bottom: 40px;
+        opacity: 0;
+        transition: 0.5s opacity;
+    }
+    .products-lv:hover{
+        max-height: 91px;
+    }/*
+    .descrip{
+        display: contents;
+    }*/
+    
+
+    
+}
