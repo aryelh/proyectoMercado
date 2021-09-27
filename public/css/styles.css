@@ -1,3 +1,9 @@
+* {
+    margin: 0 px ;
+    padding: 0 px ;
+    box-sizing: border-box ;
+    }
+
 header{
     background-color: #EAC926;
     color: rgb#03264C;
@@ -11,38 +17,73 @@ body{
     margin: 0;
 }
 /*IMAGEN DEL LOGOTIPO*/
-.logotype{
-    max-width: 40%;
+.logotypo{
+    max-width: 50%;
     display: block;
     padding: 20px;
+    border: 2px solid blue;/*QUITAR ESTO*/
 }
+.contenedor-header{
+    height: 50%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+
+    border: 2px solid red;/*QUITAR ESTO*/  
+}
+.caja-uno,
+.buscar-lupa{
+    margin: 10px;
+    text-align: center;
+
+
+}
+
+
 /*FORMULARIO BUSCAR*/
-.search-engine{
-    margin-left:5%;
-    max-width: 70%;
+.buscar{
+    background-color: #FFF;
+    /*border: 1px solid #000;*/
+    outline: none;
+    color: #666;
+    padding: 2px;
+    height: 20px;
+    font-size: 12px;
+    width: 80%;
+    margin-left: 10px;
+    border-radius: 1mm;
 }
+
 /*IMAGEN DE LUPA AL LADO DEL FORMULARIO BUSCAR*/
 .lupa{
-    background: white;
-    border: 1px solid #666;
-    margin-left: 2px;
-    font-size: 18px;
-    margin: 0;
+    background-color: #FFF;
+    text-align: center;
+    /*border: 1px solid #000;*/
+    color: #666;
+    width: 10%;
+    font-size: 14px;
+    /*margin-left: 5px;*/
+    border-radius: 1mm;
+    
 }
+
+.buscar-lupa{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 10px;
+    /*max-width: 70%;*/
+    max-width: 50%;
+    border: 2px solid green;/*QUITAR ESTO*/
+}
+
 /*TEXTO COMPRA EN CUOTAS*/
 .compra-en-cuotas{
     text-align: center;
+    margin-bottom: 0px;
+    border: 2px solid grey;/*QUITAR ESTO*/
 }
-/*LISTA DEL ENCABEZADO OFERTAS HASTA AYUDA Y CREA TU CUENTA HASTA MIS COMPRAS*/
-ul{
-    /*list-style: none;*/
-    /*text-decoration: none;*/
-    padding: 0;
-}
-.text-first-ulist{
-    text-decoration: none;
-}
-
 /*MENU HAMBURGUESA*/
 .burger-menu{
     text-align: center;
@@ -57,33 +98,40 @@ ul{
 i.element-i{
     line-height: 30px;
 }
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+header nav ul li{
+    list-style-type: none;
+}
+
 /*CAJA CONTENEDORA BANER*/
 .banner{
     display: flex;
     flex-direction: column;
 }
 /*IMAGEN BANER*/
-.imagebanner{
+.imagenbanner{
     max-width: auto;
     height: 500px;
 }
-/*main{ QUITAR DESPUESSSSSSSSS
+
+header nav{
+    display: none;
+}
+main{
     width: 90%;
     margin: 0 auto;
-}*/
+}
 /*H3 TEXTO ULTIMA VISITA Y OFERTAS*/
 .seccion{
     font-size: 24px;
     text-align: left;
     color: #666;
 }
-/*CAJA CONTENEDORA TODOS LOS PRODUCTOS ULTIMA VISITA*/
-.imag-productos{
-    margin: auto;
-    width: 90%;
-}
-/*CAJA CONTENEDORA PRODUCTOS ULTIMA VISITA COMPLETO, CADA PRODUCTO CONTIENE ESTA CAJA*/*
-.products-lv{
+/*CAJA CONTENEDORA PRODUCTOS ULTIMA VISITA Y OFERYAS, CADA PRODUCTO CONTIENE ESTA CAJA*/*
+.productos-lv{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -94,12 +142,12 @@ article img{
     width: 100vw;
     max-width: 100%;
 }
+
 /*P TEXTO PRECIOS*/
 .precios-text{
     font-size:18px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 10px;
     width: 30%;
 }
 /*P TEXTO DESCUENTOS*/
@@ -107,7 +155,6 @@ article img{
     font-size: 16px;
     margin-top: 0px;
     color: #39b54a;
-    margin-left: 10px;
     width: 70%;
 }
 /*P TEXTO DESCRIPCION, TIPO DE PRODUCTO MARCA Y MODELO*/
@@ -116,32 +163,38 @@ article img{
     font-weight: normal;
     color:#666;
     margin-top: 20px;
-    margin-left: 10px;
-    /*display:none;*/ 
+    display:contents; 
+}
+.valor-desc{
+    display: flex;
+    flex-direction: row;
+
 }
 /*CAJA CONTENEDORA DEL CAMION DE REPARTO*/
 
-.contenedor-principal{
+.contenedor-enprincipal{
     position: relative;
-}
-
-.circulo-camionsito{
-    border-top: 2px solid #ebebeb;
-    padding: 15px;
+    border-top: 1px solid #ebebeb;
+    padding: 15px; 
 }
 /*IMAGEN CAMIONSITO DE REPARTO*/
-.truck-details{
+.camionsito{
     color: #39b54a;
-    font-size: 15px;
-    padding: auto;
-    text-align: center;
-    line-height: 0px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
     position: absolute;
     right: 20px;
+    top: -15px;
 }
 
 /*CIRCULO CAMIONSITO*/
-div .truck-details{
+div .camionsito{
     background-color:white;
     border: solid 1px green;
     width: 30px;
@@ -155,42 +208,92 @@ footer{
     text-align: center;
     color: #666;
 }
-.pie-grande{
-
-    border: 2px solid rgb(0, 0, 0);/*QUITAR ESTO*/
-}
 .piedepagina{
-    padding-top: 35px;
-    margin: 0 35px;
-    border: 2px solid green;/*QUITAR ESTO*/
+    padding-top: 20px;
+    margin: 0px 30px;
 }
-
 .imgfooter{
     color: #1259c3;
     font-size: 2em;
+    margin-bottom: 10px;
+    /*margin-bottom: 0px;*/
 }
 .footersubt{
     margin-bottom: 0px;
-    margin-top: 10px;
 }
 .footer-p{
     margin-top: 2px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .derechos-r{
     text-align: left;
     margin-left: 10px;
+    padding-bottom: 5px;
 }
+
 /*MEDIA QUERIES*/
+/*PARA TABLET*/
 @media (min-width: 426px){
-    .products-lv{
+    .logotypo{
+        width: 37%;
+    }
+
+    .buscar-lupa{
+        width: 37%;
+    }
+    .buscar{
+        width: 70%;
+    }
+    .productos-lv{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    .all-images-container{
+    header nav{
+        display: contents;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .contenedor-imagenes{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+}  
+
+    .productos-lv{
+        width: 45%;
+
+}
+    .precios-text,
+    .descu{
+        width: 50%;
+}
+    main section article.descrip{
+        display: block;
+}
+    .primera-lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+}
+    .segunda-lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+}
+
+
+
+ /*aca termina 426*/ 
+}
+    /*
+    
+    .contenedor-imagenes{
         display:flex;
         flex-direction: row;
     }
-    .products-lv{
+    .productos-lv{
     margin: 10px 10px;
     box-sizing: border-box;
     }
@@ -199,26 +302,32 @@ footer{
     flex-direction: row;   
     }
 }
+
+
 /*PARA PC*/
-
-
 
 @media (min-width: 769px){
 
-    .products-lv:hover .descrip{
+    .productos-lv:hover .descrip{
         position:absolute;
         z-index: 1;
         bottom: 40px;
         opacity: 0;
         transition: 0.5s opacity;
     }
-    .products-lv:hover{
+    .productos-lv:hover{
         max-height: 91px;
-    }/*
+    }
     .descrip{
         display: contents;
-    }*/
+    }
+    .productos-lv{
+        width: 23%;
     
+    }
 
-    
+
+
+ /*aca termina 769*/   
 }
+

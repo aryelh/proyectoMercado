@@ -12,33 +12,38 @@ rel="stylesheet" />
 </head>
 <body>
     <header>
-        <!--COMPANY NAME-->
-        <img class= "logotype" src='images/logo-mercado-liebre.svg' alt="logo">
-        <!--BOX SEARCH FORM-->
-        <input class= "search-engine" type= "search" name= "busqueda" placeholder= "Buscar producto, marca"></input-type>
-        <!--IMAGE / MAGNIFYING GLASS-->
-        <i class="fas fa-search lupa"></i>
-        <br/>
-        <br/>
-        <!--TEXT / BUY AND IMG/ HOLDING USD-->
-        <div class="compra-en-cuotas"><i class="fas fa-hand-holding-usd"> </i>Comprá en cuotas y sin tarjeta de crédito</div>
+        <div class="contenedor-header">
+            <div class="caja-uno">
+                <img class= "logotypo" src='images/logo-mercado-liebre.svg' alt="logo">
+            </div>
+            <div class="buscar-lupa">
+                <div class="buscar">Buscar productos, marcas</div>
+                <div class="lupa"><i class="fas fa-search"></i></div>
+            </div>
+      
+            <div class="compra-en-cuotas"><i class="fas fa-hand-holding-usd"> </i>Comprá en cuotas y sin tarjeta de crédito</div>
+        </div>
+
         <nav>
-            <!--U-LIST OFFERS AND MORE-->
+            <!--PRIMERA LISTA-->
             <ul>
-                <div class="text-first-ulist">
-                <li><a href='#'>Ofertas</a></li>
-                <li><a href='#'>Tiendas Oficiales</a></li>
-                <li><a href='#'>Vender</a></li>
-                <li><a href='#'>Ayuda</a></li>
+                <div class="primera-lista">
+                    <li><a href='#'>Ofertas</a></li>
+                    <li><a href='#'>Tiendas Oficiales</a></li>
+                    <li><a href='#'>Vender</a></li>
+                    <li><a href='#'>Ayuda</a></li>
                 </div>
             </ul>
-            <!--U-LIST CREATE ACCOUNT AND MORE-->
+            <!--SEGUNDA LISTA-->
             <ul>
-                <li><a href='/views/register.html'>Creá tu cuenta</a> <i class="far fa-address-card"></i></li>
-                <li><a href='/views/login.html'>Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
-                <li><a href='#'>Mis compras</a> <i class="fas fa-shopping-basket"></i></li>
+                <div class="segunda-lista">
+                    <li><a href='/views/register.html'>Creá tu cuenta</a> <i class="far fa-address-card"></i></li>
+                    <li><a href='/views/login.html'>Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
+                    <li><a href='#'>Mis compras</a> <i class="fas fa-shopping-basket"></i></li>
+                </div>
             </ul>
-        </nav> 
+        </nav>
+        <br/> 
         <!--IMG / BUEGER MENU-->            
         <div class="burger-menu">
             <i class="element-i fas fa-bars"></i>
@@ -48,22 +53,21 @@ rel="stylesheet" />
     
         <!--CONTAINER BOX  BANER-->
         <section class="banner">
-            <a href='url banner'></a><img class="imagebaner" src='images/img-home-banner.jpg'/></a>
+            <a href='url banner'></a><img class="imagenbaner" src='images/img-home-banner.jpg'/></a>
         </section>
 
     <main>
-
         <!--CONTAINER BOX FIRST BLOCK / LAST VISIT-->
-        <section class ="imag-productos">
+        <section>
         <!--TEXT/ SUBTITLE LAST VISIT-->
          <h3 class="seccion">Basado en tu última visita</h3>
-         <div class="all-images-container">
+         <div class="contenedor-imagenes">
          <!--INDIVIDUAL CONTAINER BOX ARTICLE-->
-            <article class="products-lv">
+            <article class="productos-lv">
                 <a href='url cafetera'><img src='/images/img-cafetera-moulinex.jpg'/></a>
-                <div class= "contenedor-principal">
+                <div class= "contenedor-enprincipal">
                     <div class= "circulo-camionsito">
-                        <i class= "truck-details fas fa-truck"></i>
+                        <i class= "camionsito fas fa-truck"></i>
                     </div>
                     <div class="valor-desc">
                         <p class= "precios-text">$6.770</p>
@@ -75,89 +79,113 @@ rel="stylesheet" />
                 </div>
             </article>
             <!--INDIVIDUAL CONTAINER BOX ARTICLE-->
-            <article class="products-lv">
+            <article class="productos-lv">
                 <a href='url MacBook'><img src='/images/img-macbook-pro-2019.jpg'/></a>
+                <div class= "contenedor-enprincipal">
                     <div class= "circulo-camionsito">
-                        <i class= "truck-details fas fa-truck"></i>
+                        <i class= "camionsito fas fa-truck"></i>
                     </div>
                     <div class="valor-desc">
-                    <p class= "precios-text">$6.770</p>
-                    <p class= "descu">40% off</p>
+                        <p class= "precios-text">$6.770</p>
+                        <p class= "descu">40% off</p>
                     </div>
                     <p class= "descrip"><strong>MacBook Pro 2019</strong></p>
+                </div>
             </article>
             <!--INDIVIDUAL CONTAINER BOX ARTICLE-->
-            <article class="products-lv">         
+            <article class="productos-lv">         
                 <a href='url Samsung Galaxy'><img src='/images/img-samsung-galaxy-s10.jpg'/></a>
+                <div class= "contenedor-enprincipal">
                     <div class= "circulo-camionsito">
-                        <i class= "truck-details fas fa-truck"></i>
+                        <i class= "camionsito fas fa-truck"></i>
                     </div>
                     <div class="valor-desc">
-                    <p class= "precios-text">$6.770</p>
-                    <p class= "descu">40% off</p>
+                        <p class= "precios-text">$6.770</p>
+                        <p class= "descu">40% off</p>
                     </div>
                     <p class= "descrip"><strong>Samsung Galaxy S10</strong></p>
+                </div>
             </article>   
             <!--INDIVIDUAL CONTAINER BOX ARTICLE-->
-            <article class="products-lv">
+            <article class="productos-lv">
                 <a href='url SmartTv'><img src='/images/img-tv-samsung-smart.jpg'/></a>
+                <div class= "contenedor-enprincipal">
                     <div class= "circulo-camionsito">
-                        <i class= "truck-details fas fa-truck"></i>
+                        <i class= "camionsito fas fa-truck"></i>
                     </div>
                     <div class="valor-desc">
-                    <p class= "precios-text">$6.770</p>
-                    <p class= "descu">40% off</p>
+                        <p class= "precios-text">$6.770</p>
+                        <p class= "descu">40% off</p>
                     </div>
                     <p class= "descrip"><strong>SmartTv Samsung 43"</strong></p>
+                </div>
             </article>
             </div>           
         </section>
         <!--CONTAINER BOX SECOND BLOCK / OFFERS -->
-        <section class= "imag-productos">
+        <section>
         <!--TEXT/ SUBTITLE OFFERS-->
          <h3 class="seccion">Ofertas</h3>
-         <div class="all-images-container">
+         <div class="contenedor-imagenes">
          <!--INDIVIDUAL CONTAINER BOX ARTICLE-->
-            <article class="products-lv">
+            <article class="productos-lv">
                 <a href='url cafetera'><img src='/images/img-cafetera-moulinex.jpg'/></a>
-                <!--IMG/ TRUCK DELIVERY-->
-                <div class= "circulo-camionsito">
-                    <i class= "truck-details fas fa-truck"></i>
-                </div>
-                    <p class= "precios-text">$6.770</p>
-                    <p class= "descu">40% off</p>
+                <div class= "contenedor-enprincipal">
+                    <!--IMG/ TRUCK DELIVERY-->
+                    <div class= "circulo-camionsito">
+                        <i class= "camionsito fas fa-truck"></i>
+                    </div>
+                    <div class="valor-desc">
+                        <p class= "precios-text">$6.770</p>
+                        <p class= "descu">40% off</p>
+                    </div>
                     <p class= "descrip"><strong>Cafetera Moulinex</strong></p>
+                </div>
             </article>
             <!--INDIVIDUAL CONTAINER BOX ARTICLE-->
-            <article class="products-lv">
+            <article class="productos-lv">
                 <a href='url MacBook'><img src='/images/img-macbook-pro-2019.jpg'/></a>
+                <div class= "contenedor-enprincipal">
                 <!--IMG/ TRUCK DELIVERY-->
                     <div class= "circulo-camionsito">
-                        <i class= "truck-details fas fa-truck"></i>
+                        <i class= "camionsito fas fa-truck"></i>
                     </div>
-                    <p class= "precios-text">$6.770</p>
-                    <p class= "descu">40% off</p>
+                    <div class="valor-desc">
+                        <p class= "precios-text">$6.770</p>
+                        <p class= "descu">40% off</p>
+                    </div>
                     <p class= "descrip"><strong>MacBook Pro 2019</strong></p>
+                </div>
             </article>
             <!--INDIVIDUAL CONTAINER BOX ARTICLE-->
-            <article class="products-lv">          
+            <article class="productos-lv">          
                 <a href='url Samsung Galaxy'><img src='/images/img-samsung-galaxy-s10.jpg'/></a>
+                <div class= "contenedor-enprincipal">
                 <!--IMG/ TRUCK DELIVERY-->
                     <div class= "circulo-camionsito">
-                        <i class= "truck-details fas fa-truck"></i>
+                        <i class= "camionsito fas fa-truck"></i>
                     </div>
-                    <p class= "precios-text">$6.770</p>
-                    <p class= "descu">40% off</p>
+                    <div class="valor-desc">
+                        <p class= "precios-text">$6.770</p>
+                        <p class= "descu">40% off</p>
+                    </div>
                     <p class= "descrip"><strong>Samsung Galaxy S10</strong></p>
+                </div>
             </article>   
             <!--INDIVIDUAL CONTAINER BOX ARTICLE-->
-            <article class="products-lv">
+            <article class="productos-lv">
                 <a href='url SmartTv'><img src='/images/img-tv-samsung-smart.jpg'/></a>
+                <div class= "contenedor-enprincipal">
                 <!--IMG/ TRUCK DELIVERY-->
-                    <div class= "circulo-camionsito"><i class= "truck-details fas fa-truck"></i></div>
-                    <p class= "precios-text">$6.770</p>
-                    <p class= "descu">40% off</p>
+                    <div class= "circulo-camionsito">
+                        <i class= "camionsito fas fa-truck"></i>
+                    </div>
+                    <div class="valor-desc">
+                        <p class= "precios-text">$6.770</p>
+                        <p class= "descu">40% off</p>
+                    </div>
                     <p class= "descrip"><strong>SmartTv Samsung 43"</strong></p>
+                </div>
             </article>
             </div>          
         </section>
