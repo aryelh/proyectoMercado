@@ -22,15 +22,11 @@ body{
 /*IMAGEN DEL LOGOTIPO*/
 .logotypo{
     width: 50%;
-
-    border: 2px solid blue;/*QUITAR ESTO*/
 }
 .contenedor-header{
     display:flex;
     flex-wrap: wrap;
     align-items: center;
-
-    border: 2px solid red;/*QUITAR ESTO*/  
 }
 
 /*FORMULARIO BUSCAR*/
@@ -60,7 +56,6 @@ body{
 .compra-en-cuotas{
     text-align: center;
     margin-bottom: 0px;
-    border: 2px solid grey;/*QUITAR ESTO*/
 }
 /*MENU HAMBURGUESA*/
 .burger-menu{
@@ -83,35 +78,70 @@ header nav ul li a{
 header nav ul li{
     list-style-type: none;
 
-/*EMPIEZA EL FORMULARIO*/
+                        /*EMPIEZA EL FORMULARIO*/
 
 }
 main{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-form{
-    border: 2px solid black;
-}
 main h3 p{
+    font-size: 16px;
     text-align: center;
 }
 main form div{
     padding-bottom: 20px;
 }
 .uno-dos div input,
-.tres-cuatro div input{
- width: 80%;
-padding: 10px;
-margin-left: 10vw;
-max-width: 300px;
-border: #ebebeb;
-border-radius: 2mm;
-color: grey;
+.tres-cuatro div input,
+.cinco-seis div input{
+    width: 80%;
+    padding: 10px;
+    margin-left: 10vw;
+    max-width: 300px;
+    border: #ebebeb;
+    border-radius: 2mm;
+    color: grey;
+    background-color: white;
 }
-main form .fecha-nac{
-    border:2px red;
-    margin-left: 20;
+.fecha-nac,
+.cat-interes p,
+.foto-usuario p,
+.perfil-usuario p{
+
+    font-size: 14px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+.perfil-usuario label input{
+    margin-left: 40px;
+}
+.perfil-usuario{
+    margin-bottom: 30px;
+}
+
+.todos-checkbox{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.todos-checkbox label{
+    margin: 10px;
+}
+.foto-usuario input{
+    font-size: 12px;
+    margin-left: 10px;
+    
+}
+.ambos-botones{
+    text-align: center;
+    font-size: 20px;
+}
+.ambos-botones button{
+    background-color: #707070;
+    border-color: transparent;
+    border-radius: 1mm;
+    color: black;
 }
 
 

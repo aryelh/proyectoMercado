@@ -6,56 +6,61 @@
 
 header{
     background-color: #EAC926;
-    color: rgb#03264C;
-  
+    color: rgb#03264C;  
 }
-/*CUERPO PRINCIPAL DE LA PAGINA BODY*/
+/*CUERPO PRINCIPAL DE LA PAGINA*/
 body{
     font-family: "Roboto", sans-serif;
     background-color: #ebebeb;
     font-size: 12px;
     margin: 0;
 }
-.caja-uno{
+.caja-logo{
     width: 100%;
 }
 /*IMAGEN DEL LOGOTIPO*/
 .logotypo{
     width: 50%;
-
     border: 2px solid blue;/*QUITAR ESTO*/
 }
+/*CONTENEDOR LOGO, BUSCAR, LUPA Y TEXT COMPRA EN CUOTAS*/
 .contenedor-header{
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
+    flex-direction: column;
     align-items: center;
-
     border: 2px solid red;/*QUITAR ESTO*/  
 }
-
 /*FORMULARIO BUSCAR*/
 .buscar{
+    /*width: 50%;*/
+    max-width: 135px;
+    height: 34px;
+    border-color: white;
+    border-top-left-radius: 1mm;
+    border-bottom-left-radius: 1mm;
+}
+/*CONTENEDOR FORMULARIO BUSCAR E IMG LUPA*/
+.buscar-lupa{
+    display:flex;
+    flex-wrap:nowrap;
     width: 50%;
-    max-width: 200px;
-    height: 35px;
-    border-radius: 5px;
-    margin-left: 15px;
-    padding-left: 8px;
+    background-color: white;
     border-radius: 1mm;
 }
-
-/*IMAGEN DE LUPA AL LADO DEL FORMULARIO BUSCAR*/
+/*CONTENEDOR IMAGEN DE LUPA AL LADO DEL FORMULARIO BUSCAR*/
 .img-lupa{
-    height: 35px;
+    padding-left: 0px;
+    border-top-right-radius: 1mm;
+    border-bottom-right-radius: 1mm;
+    border-color:transparent;
     background-color: transparent;
-    
 }
+/*IMAGEN LUPA*/
 .lupa{
     color: grey;
-    height: 30px;
-    font-size: 20px;
+    font-size: 11px;
 }
-
 /*TEXTO COMPRA EN CUOTAS*/
 .compra-en-cuotas{
     text-align: center;
@@ -83,7 +88,6 @@ header nav ul li a{
 header nav ul li{
     list-style-type: none;
 }
-
 /*CAJA CONTENEDORA BANER*/
 .banner{
     display: flex;
@@ -94,10 +98,11 @@ header nav ul li{
     max-width: auto;
     height: 500px;
 }
-
+/*NAV DE PRIMERA LISTA*/
 header nav{
     display: none;
 }
+/*SECCION MAIN*/
 main{
     width: 90%;
     margin: 0 auto;
@@ -108,7 +113,7 @@ main{
     text-align: left;
     color: #666;
 }
-/*CAJA CONTENEDORA PRODUCTOS ULTIMA VISITA Y OFERYAS, CADA PRODUCTO CONTIENE ESTA CAJA*/*
+/*CAJA CONTENEDORA PRODUCTOS ULTIMA VISITA Y OFERYAS, CADA PRODUCTO CONTIENE ESTA CAJA*/
 .productos-lv{
     display: flex;
     flex-direction: column;
@@ -120,7 +125,6 @@ article img{
     width: 100vw;
     max-width: 100%;
 }
-
 /*P TEXTO PRECIOS*/
 .precios-text{
     font-size:18px;
@@ -146,10 +150,8 @@ article img{
 .valor-desc{
     display: flex;
     flex-direction: row;
-
 }
 /*CAJA CONTENEDORA DEL CAMION DE REPARTO*/
-
 .contenedor-enprincipal{
     position: relative;
     border-top: 1px solid #ebebeb;
@@ -170,7 +172,6 @@ article img{
     right: 20px;
     top: -15px;
 }
-
 /*CIRCULO CAMIONSITO*/
 div .camionsito{
     background-color:white;
@@ -180,7 +181,6 @@ div .camionsito{
     border-radius: 20px;
 }
 /*PIE DE PAGINA*/
-
 footer{
     background-color: white;
     text-align: center;
@@ -190,47 +190,57 @@ footer{
     padding-top: 20px;
     margin: 0px 30px;
 }
+/*IMAGEN TARJETA*/
 .imgfooter{
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
-    /*margin-bottom: 0px;*/
 }
+/*TODOS LOS H3 DEL FOOTER*/
 .footersubt{
     margin-bottom: 0px;
 }
+/*TODOS LOS P DEL FOOTER*/
 .footer-p{
     margin-top: 2px;
     margin-bottom: 40px;
 }
+/*TEXT DERECHOS*/
 .derechos-r{
     text-align: left;
     margin-left: 10px;
     padding-bottom: 5px;
 }
 
-/*MEDIA QUERIES*/
-/*PARA TABLET*/
+/*######################## MEDIA QUERIES ########################*/
+                        /*PARA TABLET*/
+
 @media (min-width: 426px){
+/*IMAGEN DEL LOGOTIPO*/
     .logotypo{
         width: 37%;
     }
-
+/*CONTENEDOR FORMULARIO BUSCAR E IMG LUPA*/
     .buscar-lupa{
         width: 37%;
     }
+/*FORMULARIO BUSCAR*/
     .buscar{
         width: 70%;
     }
+/*CAJA CONTENEDORA PRODUCTOS ULTIMA VISITA Y OFERYAS, CADA PRODUCTO CONTIENE ESTA CAJA*/
     .productos-lv{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+/*NAV DE PRIMERA LISTA*/
     header nav{
         display: contents;
     }
+/*MENU HAMBURGUESA*/
     .burger-menu{
         display: none;
     }
+/*CONTENEDOR DEL GRUPO DE ARTICULOS/SON DOS Y CADA UNO TOMA 4 PRODUCTOS*/ 
     .contenedor-imagenes{
         display:flex;
         flex-direction: row;
@@ -238,54 +248,39 @@ footer{
         justify-content: space-between;
         align-items: flex-start;
 }  
-
+/*CONTENEDOR PRODUCTOS ULTIMA VISITA Y OFERYAS, CADA PRODUCTO CONTIENE ESTA CAJA*/
     .productos-lv{
         width: 45%;
-
 }
+/*P TEXTO PRECIOS Y DESCUENTOS*/
     .precios-text,
     .descu{
         width: 50%;
 }
+/*P TEXTO DESCRIPCION, TIPO DE PRODUCTO MARCA Y MODELO*/
     main section article.descrip{
         display: block;
 }
+/*PRIMERA LISTA DEL HEADER DESDE OFERTAS HASTA AYUDA*/
     .primera-lista{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
 }
+/*SEGUNDA LISTA DEL HEADER DESDE CREA TU CUENTA HASTA MIS COMPRAS*/
     .segunda-lista{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
 }
 
-
-
  /*aca termina 426*/ 
 }
-    /*
-    
-    .contenedor-imagenes{
-        display:flex;
-        flex-direction: row;
-    }
-    .productos-lv{
-    margin: 10px 10px;
-    box-sizing: border-box;
-    }
-    .valor-desc{
-    display: flex;
-    flex-direction: row;   
-    }
-}
-
-
-/*PARA PC*/
+                        /*PARA PC*/
 
 @media (min-width: 769px){
 
+/*DESCRIPCION DE CADA PRODUCTO*/
     .productos-lv:hover .descrip{
         position:absolute;
         z-index: 1;
@@ -293,17 +288,19 @@ footer{
         opacity: 0;
         transition: 0.5s opacity;
     }
+/*CONTENEDOR PRODUCTOS ULTIMA VISITA Y OFERYAS, CADA PRODUCTO CONTIENE ESTA CAJA*/
     .productos-lv:hover{
         max-height: 91px;
     }
+/*DESCRIPCION DE CADA PRODUCTO*/
     .descrip{
         display: contents;
     }
+/*CONTENEDOR PRODUCTOS ULTIMA VISITA Y OFERYAS, CADA PRODUCTO CONTIENE ESTA CAJA*/
     .productos-lv{
         width: 23%;
     
     }
-
 
 
  /*aca termina 769*/   

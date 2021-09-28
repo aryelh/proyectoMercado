@@ -83,13 +83,28 @@ header nav ul li a{
 header nav ul li{
     list-style-type: none;
 }
+                        /*EMPIEZA EL FORMULARIO*/
 
+main{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+main form div{
+    padding-bottom: 20px;
+}
+.usuario-contras{
+    width: 80%;
+    padding: 10px;
+    margin-left: 10vw;
+    max-width: 300px;
+    /*border: #ebebeb;*/
+    border-radius: 2mm;
+    color: grey;
+    align-items: center;
 
+    border-color: 2px solid blue;
 
-
-
-
-
+}
 
 
 
