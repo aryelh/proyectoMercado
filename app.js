@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');//unifica las rutas en los distintos S.O.para que express identifique las rutas origen destino
 const app = express();
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log('Server running on port 3000');
 });
 
