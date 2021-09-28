@@ -16,66 +16,44 @@ body{
     font-size: 12px;
     margin: 0;
 }
+.caja-uno{
+    width: 100%;
+}
 /*IMAGEN DEL LOGOTIPO*/
 .logotypo{
-    max-width: 50%;
-    display: block;
-    padding: 20px;
+    width: 50%;
+
     border: 2px solid blue;/*QUITAR ESTO*/
 }
 .contenedor-header{
-    height: 50%;
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0px;
+    align-items: center;
 
     border: 2px solid red;/*QUITAR ESTO*/  
 }
-.caja-uno,
-.buscar-lupa{
-    margin: 10px;
-    text-align: center;
-
-
-}
-
 
 /*FORMULARIO BUSCAR*/
 .buscar{
-    background-color: #FFF;
-    /*border: 1px solid #000;*/
-    outline: none;
-    color: #666;
-    padding: 2px;
-    height: 20px;
-    font-size: 12px;
-    width: 80%;
-    margin-left: 10px;
+    width: 50%;
+    max-width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 15px;
+    padding-left: 8px;
     border-radius: 1mm;
 }
 
 /*IMAGEN DE LUPA AL LADO DEL FORMULARIO BUSCAR*/
-.lupa{
-    background-color: #FFF;
-    text-align: center;
-    /*border: 1px solid #000;*/
-    color: #666;
-    width: 10%;
-    font-size: 14px;
-    /*margin-left: 5px;*/
-    border-radius: 1mm;
+.img-lupa{
+    height: 35px;
+    background-color: transparent;
     
 }
-
-.buscar-lupa{
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    font-size: 10px;
-    /*max-width: 70%;*/
-    max-width: 50%;
-    border: 2px solid green;/*QUITAR ESTO*/
+.lupa{
+    color: grey;
+    height: 30px;
+    font-size: 20px;
 }
 
 /*TEXTO COMPRA EN CUOTAS*/

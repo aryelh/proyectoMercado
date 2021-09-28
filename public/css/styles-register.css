@@ -1,0 +1,168 @@
+* {
+    margin: 0 px ;
+    padding: 0 px ;
+    box-sizing: border-box ;
+    }
+
+header{
+    background-color: #EAC926;
+    color: rgb#03264C;
+  
+}
+/*CUERPO PRINCIPAL DE LA PAGINA BODY*/
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;
+    font-size: 12px;
+    margin: 0;
+}
+.caja-uno{
+    width: 100%;
+}
+/*IMAGEN DEL LOGOTIPO*/
+.logotypo{
+    width: 50%;
+
+    border: 2px solid blue;/*QUITAR ESTO*/
+}
+.contenedor-header{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    border: 2px solid red;/*QUITAR ESTO*/  
+}
+
+/*FORMULARIO BUSCAR*/
+.buscar{
+    width: 50%;
+    max-width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 15px;
+    padding-left: 8px;
+    border-radius: 1mm;
+}
+
+/*IMAGEN DE LUPA AL LADO DEL FORMULARIO BUSCAR*/
+.img-lupa{
+    height: 35px;
+    background-color: transparent;
+    
+}
+.lupa{
+    color: grey;
+    height: 30px;
+    font-size: 20px;
+}
+
+/*TEXTO COMPRA EN CUOTAS*/
+.compra-en-cuotas{
+    text-align: center;
+    margin-bottom: 0px;
+    border: 2px solid grey;/*QUITAR ESTO*/
+}
+/*MENU HAMBURGUESA*/
+.burger-menu{
+    text-align: center;
+    background-color:#1259c3;
+    color: #ebebeb;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 1mm;
+    border-color: #1259c3;   
+}
+i.element-i{
+    line-height: 30px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+header nav ul li{
+    list-style-type: none;
+
+/*EMPIEZA EL FORMULARIO*/
+
+}
+main{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+form{
+    border: 2px solid black;
+}
+main h3 p{
+    text-align: center;
+}
+main form div{
+    padding-bottom: 20px;
+}
+.uno-dos div input,
+.tres-cuatro div input{
+ width: 80%;
+padding: 10px;
+margin-left: 10vw;
+max-width: 300px;
+border: #ebebeb;
+border-radius: 2mm;
+color: grey;
+}
+main form .fecha-nac{
+    border:2px red;
+    margin-left: 20;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PIE DE PAGINA*/
+
+footer{
+    background-color: white;
+    text-align: center;
+    color: #666;
+}
+.piedepagina{
+    padding-top: 20px;
+    margin: 0px 30px;
+}
+.imgfooter{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    /*margin-bottom: 0px;*/
+}
+.footersubt{
+    margin-bottom: 0px;
+}
+.footer-p{
+    margin-top: 2px;
+    margin-bottom: 40px;
+}
+.derechos-r{
+    text-align: left;
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
