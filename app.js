@@ -3,7 +3,7 @@ const path = require('path');//unifica las rutas en los distintos S.O.para que e
 const app = express();
 
 app.listen(process.env.PORT || 3001, () => {
-    console.log('Server running on port 3000');
+    console.log('Server running on port 3001');
 });
 
 //la variable dirname hace referencia a la ubicacion deonde nos encontramos
@@ -18,4 +18,16 @@ app.get('/login',(req, res)=> {
 });
 app.get('/register',(req, res)=> {
     res.sendFile(path.resolve(__dirname, './views/register.html'));
+});
+
+app.post('/register', (req, res)=> {
+    res.redirect('/');
+});
+
+app.post('/login', (req, res)=> {
+    res.redirect('/');
+});
+
+app.post('/search', (req, res)=> {
+    res.redirect('/');
 });

@@ -7,63 +7,78 @@
     <title>Mercado liebre</title>
     <link rel="stylesheet" href="/css/styles-login.css"/>
     
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet" />
 </head>
+
 <body>
+
     <header>
+
+        <!--CONTENEDOR LOGO, BUSCAR, LUPA Y TEXT COMPRA EN CUOTAS-->
+        <div class="div-hasta-burguer">
         <div class="contenedor-header">
-            <div class="caja-uno">
+            <div class="caja-logo">
                 <img class= "logotypo" src='images/logo-mercado-liebre.svg' alt="logo">
             </div>
-            <div class="buscar-lupa">
-                <input class="buscar" type="text" placeholder="Buscar productos, marcas">
-                <button type="submit" class="img-lupa"><i class="fas fa-search lupa"></i></button>
+            <form action="/search" method="POST" class="form-buscar">
+                <div>
+                    <div class="caja-buscar-lupa">
+                        <div class="buscar-lupa">
+                            <input class="buscar" type="text" placeholder="Buscar productos, marcas">
+                            <button type="submit" class="img-lupa"><i class="fas fa-search lupa"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> 
+            <div class="compra-en-cuotas">
+                <p><i class="fas fa-hand-holding-usd"> </i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
-            <div class="compra-en-cuotas"><i class="fas fa-hand-holding-usd"> </i>Comprá en cuotas y sin tarjeta de crédito</div>
-        </div>
-
-        <nav>
-            <!--PRIMERA LISTA-->
-            <ul>
-                <div class="primera-lista">
-                    <li><a href='#'>Ofertas</a></li>
-                    <li><a href='#'>Tiendas Oficiales</a></li>
-                    <li><a href='#'>Vender</a></li>
-                    <li><a href='#'>Ayuda</a></li>
-                </div>
-            </ul>
-            <!--SEGUNDA LISTA-->
-            <ul>
-                <div class="segunda-lista">
-                    <li><a href='/views/register.html'>Creá tu cuenta</a> <i class="far fa-address-card"></i></li>
-                    <li><a href='/views/login.html'>Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
-                    <li><a href='#'>Mis compras</a> <i class="fas fa-shopping-basket"></i></li>
-                </div>
-            </ul>
-        </nav>
-        <br/> 
+        </div>       
         <!--IMAG / BUEGER MENU-->            
         <div class="burger-menu">
             <i class="element-i fas fa-bars"></i>
         </div>
-        <br/>
+        <!--LISTAS UL-->
+        <nav class="las-dos-listas">
+            <ul>
+                    <li><a href='#'>Ofertas</a></li>
+                    <li><a href='#'>Tiendas Oficiales</a></li>
+                    <li><a href='#'>Vender</a></li>
+                    <li><a href='#'>Ayuda</a></li>
+            </ul>
+
+            <ul>
+                    <li><a href='/register'>Creá tu cuenta</a> <i class="far fa-address-card"></i></li>
+                    <li><a href='/login'>Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
+                    <li><a href='#'>Mis compras</a> <i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </nav>
+    </div>
+    
     </header>
+    
+        <!--CONTENEDOR  BANER-->
+        <section class="banner">
+            <img class="imag-baner" src='images/img-home-banner.jpg' alt="banner">   
+        </section>
+
     <main>
 <!--##########INICIO DEL FORMULARIO##########-->
 
       <form action="/login" method="GET">
+        <h2>LOGIN</h2>
         <div class="usuario-contras">
             <div>
-                <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@">
+                <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@" required>
             </div>
 
             <div>
-                <input type="password" name="passwordUser" placeholder="Contraseña" maxlength="8" minlength="4">
+                <input type="password" name="passwordUser" placeholder="Contraseña" maxlength="8" minlength="4"required>
             </div>
         </div>
-        <div>
-            <button type="submit" a href="/views/home.html">Enviar</button>
+        <div class="bonton-enviar">
+            <button type="submit" a href="/home">Enviar</button>
         </div>
 
       </form>  

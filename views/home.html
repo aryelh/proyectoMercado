@@ -9,53 +9,62 @@
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet" />
 </head>
+
 <body>
+
     <header>
+
         <!--CONTENEDOR LOGO, BUSCAR, LUPA Y TEXT COMPRA EN CUOTAS-->
+        <div class="div-hasta-burguer">
         <div class="contenedor-header">
             <div class="caja-logo">
                 <img class= "logotypo" src='images/logo-mercado-liebre.svg' alt="logo">
             </div>
-            <div class="buscar-lupa">
-                <input class="buscar" type="text" placeholder="Buscar productos, marcas">
-                <button type="submit" class="img-lupa"><i class="fas fa-search lupa"></i></button>
+            <form action="/search" method="POST" class="form-buscar">
+                <div>
+                    <div class="caja-buscar-lupa">
+                        <div class="buscar-lupa">
+                            <input class="buscar" type="text" placeholder="Buscar productos, marcas">
+                            <button type="submit" class="img-lupa"><i class="fas fa-search lupa"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> 
+            <div class="compra-en-cuotas">
+                <p><i class="fas fa-hand-holding-usd"> </i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
-             
-            <div class="compra-en-cuotas"><i class="fas fa-hand-holding-usd"> </i>Comprá en cuotas y sin tarjeta de crédito</div>
-        </div>
-        <nav>
-            <!--PRIMERA LISTA-->
-            <ul>
-                <div class="primera-lista">
-                    <li><a href='#'>Ofertas</a></li>
-                    <li><a href='#'>Tiendas Oficiales</a></li>
-                    <li><a href='#'>Vender</a></li>
-                    <li><a href='#'>Ayuda</a></li>
-                </div>
-            </ul>
-            <!--SEGUNDA LISTA-->
-            <ul>
-                <div class="segunda-lista">
-                    <li><a href='/views/register.html'>Creá tu cuenta</a> <i class="far fa-address-card"></i></li>
-                    <li><a href='/views/login.html'>Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
-                    <li><a href='#'>Mis compras</a> <i class="fas fa-shopping-basket"></i></li>
-                </div>
-            </ul>
-        </nav>
-        <br/> 
+        </div>       
         <!--IMAG / BUEGER MENU-->            
         <div class="burger-menu">
             <i class="element-i fas fa-bars"></i>
         </div>
-        <br/>
+        <!--LISTAS UL-->
+        <nav class="las-dos-listas">
+            <ul>
+                    <li><a href='#'>Ofertas</a></li>
+                    <li><a href='#'>Tiendas Oficiales</a></li>
+                    <li><a href='#'>Vender</a></li>
+                    <li><a href='#'>Ayuda</a></li>
+            </ul>
+
+            <ul>
+                    <li><a href='/register'>Creá tu cuenta</a> <i class="far fa-address-card"></i></li>
+                    <li><a href='/login'>Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
+                    <li><a href='#'>Mis compras</a> <i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </nav>
+    </div>
+    
     </header>
     
         <!--CONTENEDOR  BANER-->
         <section class="banner">
-            <a href='url banner'></a><img class="imagenbaner" src='images/img-home-banner.jpg'/></a>
+            <img class="imag-baner" src='images/img-home-banner.jpg' alt="banner">   
         </section>
 
     <main>
+
         <!--CONTENEDOR PRIMERA CAJA / ULTIMA VISITA-->
         <section>
         <!--TEXT/ ULTIMA VISITA-->
@@ -85,7 +94,7 @@
                         <i class= "camionsito fas fa-truck"></i>
                     </div>
                     <div class="valor-desc">
-                        <p class= "precios-text">$6.770</p>
+                        <p class= "precios-text">$230.000</p>
                         <p class= "descu">40% off</p>
                     </div>
                     <p class= "descrip"><strong>MacBook Pro 2019</strong></p>
@@ -99,7 +108,7 @@
                         <i class= "camionsito fas fa-truck"></i>
                     </div>
                     <div class="valor-desc">
-                        <p class= "precios-text">$6.770</p>
+                        <p class= "precios-text">$70.500</p>
                         <p class= "descu">40% off</p>
                     </div>
                     <p class= "descrip"><strong>Samsung Galaxy S10</strong></p>
@@ -113,7 +122,7 @@
                         <i class= "camionsito fas fa-truck"></i>
                     </div>
                     <div class="valor-desc">
-                        <p class= "precios-text">$6.770</p>
+                        <p class= "precios-text">$23.200</p>
                         <p class= "descu">40% off</p>
                     </div>
                     <p class= "descrip"><strong>SmartTv Samsung 43"</strong></p>
@@ -124,7 +133,9 @@
         <!--CONTENEDOR SEGUNDA CAJA / OFERTAS -->
         <section>
         <!--TEXT/ OFERTAS-->
-         <h3 class="seccion">Ofertas</h3>
+        <div class="titulo-ofertas">
+            <h3 class="seccion">Ofertas</h3>
+        </div>
          <div class="contenedor-imagenes">
          <!--CONTENEDOR INDIVIDUAL DE PRODUCTOS-->
             <article class="productos-lv">
@@ -148,7 +159,7 @@
                         <i class= "camionsito fas fa-truck"></i>
                     </div>
                     <div class="valor-desc">
-                        <p class= "precios-text">$6.770</p>
+                        <p class= "precios-text">$230.000</p>
                         <p class= "descu">40% off</p>
                     </div>
                     <p class= "descrip"><strong>MacBook Pro 2019</strong></p>
@@ -162,7 +173,7 @@
                         <i class= "camionsito fas fa-truck"></i>
                     </div>
                     <div class="valor-desc">
-                        <p class= "precios-text">$6.770</p>
+                        <p class= "precios-text">$70.500</p>
                         <p class= "descu">40% off</p>
                     </div>
                     <p class= "descrip"><strong>Samsung Galaxy S10</strong></p>
@@ -176,7 +187,7 @@
                         <i class= "camionsito fas fa-truck"></i>
                     </div>
                     <div class="valor-desc">
-                        <p class= "precios-text">$6.770</p>
+                        <p class= "precios-text">$23.200</p>
                         <p class= "descu">40% off</p>
                     </div>
                     <p class= "descrip"><strong>SmartTv Samsung 43"</strong></p>
