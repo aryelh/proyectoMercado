@@ -7,55 +7,62 @@
     <title>Mercado liebre</title>
     <link rel="stylesheet" href="/css/styles.css"/>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet" />
 </head>
 
 <body>
 
-    <header>
-
-        <!--CONTENEDOR LOGO, BUSCAR, LUPA Y TEXT COMPRA EN CUOTAS-->
-        <div class="div-hasta-burguer">
-        <div class="contenedor-header">
-            <div class="caja-logo">
-                <img class= "logotypo" src='images/logo-mercado-liebre.svg' alt="logo">
-            </div>
-            <form action="/search" method="POST" class="form-buscar">
-                <div>
-                    <div class="caja-buscar-lupa">
-                        <div class="buscar-lupa">
-                            <input class="buscar" type="text" placeholder="Buscar productos, marcas">
-                            <button type="submit" class="img-lupa"><i class="fas fa-search lupa"></i></button>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <div class="main-header-div">
+                <div class="div-main-logo">
+                    <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="logo mercado liebre"></a>
+                </div>
+                <form action="/search" method="POST" class="main-div-search">
+                    <div>
+                        <div class="div-search">
+                            <div class="div-main-busqueda">
+                                <input class="input-busqueda" type="search" name="busqueda" ></input>
+                                <button type="submit" class="ilupa"><i class="fas fa-search"></i></button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </form>
-        </div> 
-            <div class="compra-en-cuotas">
-                <p><i class="fas fa-hand-holding-usd"> </i>Comprá en cuotas y sin tarjeta de crédito</p>
+                </form>
             </div>
-        </div>       
-        <!--IMAG / BUEGER MENU-->            
-        <div class="burger-menu">
-            <i class="element-i fas fa-bars"></i>
+            <div class="p-text">
+                <p><i class="fas fa-hand-holding-usd"></i> Comprá en coutas y sin tarjeta de crédito</p>
+            </div>
         </div>
-        <!--LISTAS UL-->
-        <nav class="las-dos-listas">
-            <ul>
-                    <li><a href='#'>Ofertas</a></li>
-                    <li><a href='#'>Tiendas Oficiales</a></li>
-                    <li><a href='#'>Vender</a></li>
-                    <li><a href='#'>Ayuda</a></li>
+        <!--==========================
+                MENÚ HAMBURGUESA
+        ============================-->    
+        <a href="" class="hamburguer-buttom">
+            <i class="fas fa-bars"></i>
+        </a>
+         <!--==========================
+                MENÚ NAVEGACIÓN
+        ============================-->
+        <nav class="main-navbar">
+            <ul> 
+                <li> <a href="">Ofertas</a> </li>
+                <li> <a href="">Tiendas Oficiales</a> </li>
+                <li> <a href="">Vender</a> </li>
+                <li> <a href="">Ayuda</a> </li>
             </ul>
-
-            <ul>
-                    <li><a href='/register'>Creá tu cuenta</a> <i class="far fa-address-card"></i></li>
-                    <li><a href='/login'>Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
-                    <li><a href='#'>Mis compras</a> <i class="fas fa-shopping-basket"></i></li>
+        
+            <ul> 
+                <li> <a href="/register">Crea tu cuenta </a>  <i class="fas fa-id-card"></i></li>
+                <li> <a href="/login">Ingresá </a>  <i class="fas fa-sign-in-alt"></i> </li>
+                <li> <a href="">Mis compras </a>  <i class="fas fa-shopping-basket"></i></li>
             </ul>
         </nav>
-    </div>
-    
+        
+        <br/>
+        
     </header>
     
         <!--CONTENEDOR  BANER-->
@@ -64,15 +71,14 @@
         </section>
 
     <main>
-
+        <h3 class="seccion">Basado en tu última visita</h3>
+        
         <!--CONTENEDOR PRIMERA CAJA / ULTIMA VISITA-->
-        <section>
-        <!--TEXT/ ULTIMA VISITA-->
-         <h3 class="seccion">Basado en tu última visita</h3>
+        <section class="seccion-main">      
          <div class="contenedor-imagenes">
          <!--CONTENEDOR INDIVIDUAL DE PRODUCTOS-->
             <article class="productos-lv">
-                <a href='url cafetera'><img src='/images/img-cafetera-moulinex.jpg'/></a>
+                <a><img src='/images/img-cafetera-moulinex.jpg'/></a>
                 <div class= "contenedor-enprincipal">
                     <div class= "circulo-camionsito">
                         <i class= "camionsito fas fa-truck"></i>
@@ -80,15 +86,13 @@
                     <div class="valor-desc">
                         <p class= "precios-text">$6.770</p>
                         <p class= "descu">40% off</p>
-                    </div>
-                    <div>
-                        <p class= "descrip"><strong>Cafetera Moulinex</strong></p>
-                    </div>
+                    </div>                  
+                        <p class="descrip"><strong>Cafetera Moulinex</strong></p>                    
                 </div>
             </article>
             <!--CONTENEDOR INDIVIDUAL DE PRODUCTOS-->
             <article class="productos-lv">
-                <a href='url MacBook'><img src='/images/img-macbook-pro-2019.jpg'/></a>
+                <a><img src='/images/img-macbook-pro-2019.jpg'/></a>
                 <div class= "contenedor-enprincipal">
                     <div class= "circulo-camionsito">
                         <i class= "camionsito fas fa-truck"></i>
@@ -97,12 +101,14 @@
                         <p class= "precios-text">$230.000</p>
                         <p class= "descu">40% off</p>
                     </div>
-                    <p class= "descrip"><strong>MacBook Pro 2019</strong></p>
+                    <p class="descrip"><strong>MacBook Pro 2019</strong></p>
                 </div>
             </article>
+             </div>
+             <div class="contenedor-imagenes">
             <!--CONTENEDOR INDIVIDUAL DE PRODUCTOS-->
             <article class="productos-lv">         
-                <a href='url Samsung Galaxy'><img src='/images/img-samsung-galaxy-s10.jpg'/></a>
+                <a><img src='/images/img-samsung-galaxy-s10.jpg'/></a>
                 <div class= "contenedor-enprincipal">
                     <div class= "circulo-camionsito">
                         <i class= "camionsito fas fa-truck"></i>
@@ -111,12 +117,12 @@
                         <p class= "precios-text">$70.500</p>
                         <p class= "descu">40% off</p>
                     </div>
-                    <p class= "descrip"><strong>Samsung Galaxy S10</strong></p>
+                    <p class="descrip"><strong>Samsung Galaxy S10</strong></p>
                 </div>
             </article>   
             <!--CONTENEDOR INDIVIDUAL DE PRODUCTOS-->
             <article class="productos-lv">
-                <a href='url SmartTv'><img src='/images/img-tv-samsung-smart.jpg'/></a>
+                <a><img src='/images/img-tv-samsung-smart.jpg'/></a>
                 <div class= "contenedor-enprincipal">
                     <div class= "circulo-camionsito">
                         <i class= "camionsito fas fa-truck"></i>
@@ -128,18 +134,19 @@
                     <p class= "descrip"><strong>SmartTv Samsung 43"</strong></p>
                 </div>
             </article>
-            </div>           
+        </div>          
         </section>
+
         <!--CONTENEDOR SEGUNDA CAJA / OFERTAS -->
-        <section>
-        <!--TEXT/ OFERTAS-->
         <div class="titulo-ofertas">
             <h3 class="seccion">Ofertas</h3>
         </div>
+        <section class="seccion-main">
+        <!--TEXT/ OFERTAS-->
          <div class="contenedor-imagenes">
          <!--CONTENEDOR INDIVIDUAL DE PRODUCTOS-->
             <article class="productos-lv">
-                <a href='url cafetera'><img src='/images/img-cafetera-moulinex.jpg'/></a>
+                <a><img src='/images/img-cafetera-moulinex.jpg'/></a>
                 <div class= "contenedor-enprincipal">
                     <div class= "circulo-camionsito">
                         <i class= "camionsito fas fa-truck"></i>
@@ -153,7 +160,7 @@
             </article>
             <!--CONTENEDOR INDIVIDUAL DE PRODUCTOS-->
             <article class="productos-lv">
-                <a href='url MacBook'><img src='/images/img-macbook-pro-2019.jpg'/></a>
+                <a><img src='/images/img-macbook-pro-2019.jpg'/></a>
                 <div class= "contenedor-enprincipal">
                     <div class= "circulo-camionsito">
                         <i class= "camionsito fas fa-truck"></i>
@@ -165,9 +172,11 @@
                     <p class= "descrip"><strong>MacBook Pro 2019</strong></p>
                 </div>
             </article>
+            </div>
+            <div class="contenedor-imagenes">
             <!--CONTENEDOR INDIVIDUAL DE PRODUCTOS-->
             <article class="productos-lv">          
-                <a href='url Samsung Galaxy'><img src='/images/img-samsung-galaxy-s10.jpg'/></a>
+                <a><img src='/images/img-samsung-galaxy-s10.jpg'/></a>
                 <div class= "contenedor-enprincipal">
                     <div class= "circulo-camionsito">
                         <i class= "camionsito fas fa-truck"></i>
@@ -181,7 +190,7 @@
             </article>   
             <!--CONTENEDOR INDIVIDUAL DE PRODUCTOS-->
             <article class="productos-lv">
-                <a href='url SmartTv'><img src='/images/img-tv-samsung-smart.jpg'/></a>
+                <a><img src='/images/img-tv-samsung-smart.jpg'/></a>
                 <div class= "contenedor-enprincipal">
                     <div class= "circulo-camionsito">
                         <i class= "camionsito fas fa-truck"></i>

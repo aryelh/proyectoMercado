@@ -7,55 +7,62 @@
     <title>Mercado liebre</title>
     <link rel="stylesheet" href="/css/styles-login.css"/>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet" />
 </head>
 
 <body>
 
-    <header>
-
-        <!--CONTENEDOR LOGO, BUSCAR, LUPA Y TEXT COMPRA EN CUOTAS-->
-        <div class="div-hasta-burguer">
-        <div class="contenedor-header">
-            <div class="caja-logo">
-                <img class= "logotypo" src='images/logo-mercado-liebre.svg' alt="logo">
-            </div>
-            <form action="/search" method="POST" class="form-buscar">
-                <div>
-                    <div class="caja-buscar-lupa">
-                        <div class="buscar-lupa">
-                            <input class="buscar" type="text" placeholder="Buscar productos, marcas">
-                            <button type="submit" class="img-lupa"><i class="fas fa-search lupa"></i></button>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <div class="main-header-div">
+                <div class="div-main-logo">
+                    <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="logo mercado liebre"></a>
+                </div>
+                <form action="/search" method="POST" class="main-div-search">
+                    <div>
+                        <div class="div-search">
+                            <div class="div-main-busqueda">
+                                <input class="input-busqueda" type="search" name="busqueda" ></input>
+                                <button type="submit" class="ilupa"><i class="fas fa-search"></i></button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </form>
-        </div> 
-            <div class="compra-en-cuotas">
-                <p><i class="fas fa-hand-holding-usd"> </i>Comprá en cuotas y sin tarjeta de crédito</p>
+                </form>
             </div>
-        </div>       
-        <!--IMAG / BUEGER MENU-->            
-        <div class="burger-menu">
-            <i class="element-i fas fa-bars"></i>
+            <div class="p-text">
+                <p><i class="fas fa-hand-holding-usd"></i> Comprá en coutas y sin tarjeta de crédito</p>
+            </div>
         </div>
-        <!--LISTAS UL-->
-        <nav class="las-dos-listas">
-            <ul>
-                    <li><a href='#'>Ofertas</a></li>
-                    <li><a href='#'>Tiendas Oficiales</a></li>
-                    <li><a href='#'>Vender</a></li>
-                    <li><a href='#'>Ayuda</a></li>
+        <!--==========================
+                MENÚ HAMBURGUESA
+        ============================-->    
+        <a href="" class="hamburguer-buttom">
+            <i class="fas fa-bars"></i>
+        </a>
+         <!--==========================
+                MENÚ NAVEGACIÓN
+        ============================-->
+        <nav class="main-navbar">
+            <ul> 
+                <li> <a href="">Ofertas</a> </li>
+                <li> <a href="">Tiendas Oficiales</a> </li>
+                <li> <a href="">Vender</a> </li>
+                <li> <a href="">Ayuda</a> </li>
             </ul>
-
-            <ul>
-                    <li><a href='/register'>Creá tu cuenta</a> <i class="far fa-address-card"></i></li>
-                    <li><a href='/login'>Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
-                    <li><a href='#'>Mis compras</a> <i class="fas fa-shopping-basket"></i></li>
+        
+            <ul> 
+                <li> <a href="/register">Crea tu cuenta </a>  <i class="fas fa-id-card"></i></li>
+                <li> <a href="/login">Ingresá </a>  <i class="fas fa-sign-in-alt"></i> </li>
+                <li> <a href="">Mis compras </a>  <i class="fas fa-shopping-basket"></i></li>
             </ul>
         </nav>
-    </div>
-    
+        
+        <br/>
+        
     </header>
     
         <!--CONTENEDOR  BANER-->
@@ -66,21 +73,26 @@
     <main>
 <!--##########INICIO DEL FORMULARIO##########-->
 
-      <form action="/login" method="GET">
-        <h2>LOGIN</h2>
-        <div class="usuario-contras">
-            <div>
-                <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@" required>
+      <form action="/login" method="POST" class="formulario">
+        <div class="main-form">
+
+        <h2>¡HOLA! Para seguir, ingresá tu usuario y contraseña</h2>
+
+            <div class="control-formulario">     
+                <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@" minlength="5" required>
             </div>
 
-            <div>
-                <input type="password" name="passwordUser" placeholder="Contraseña" maxlength="8" minlength="4"required>
+            <div class="control-formulario">
+                <input type="password" name="passwordUser" placeholder="Contraseña" minlength="4" required>
             </div>
+
         </div>
         <div class="bonton-enviar">
-            <button type="submit" a href="/home">Enviar</button>
+            <div>
+            <button type="submit" name="enviar" class="control-boton">Ingresar</button>
+            </div>
         </div>
-
+        </div>
       </form>  
     </main>
 
